@@ -97,10 +97,10 @@ int main()
 			fclose(archivo);
 	    	break;
 		case 8:
-	        printf("El sistema de gestiÛn de inventario de productos b·sicos se retirar· pronto ...");
+	        printf("El sistema de gesti√≥n de inventario de productos b√°sicos se retirar√° pronto ...");
 	        exit(0);
         default:
-            printf("La instrucciÛn que ingresÛ es incorrecta, vuelva a ingresar");       
+            printf("La instrucci√≥n que ingres√≥ es incorrecta, vuelva a ingresar");       
 		}
 	}while(opcion!=8);
 }
@@ -178,7 +178,7 @@ void imprimir(ALUMNOS *L,int n)
                 memcpy(temporal, L[indiceActual].matricula, 20);
                 
                 memcpy(L[indiceActual].matricula, L[indiceSiguienteElemento].matricula, 20);
-                // Y en el siguiente elemento, lo que habÌa antes en el actual pero ahora est· en temporal
+                // Y en el siguiente elemento, lo que hab√≠a antes en el actual pero ahora est√° en temporal
                 memcpy(L[indiceSiguienteElemento].matricula, temporal, 20);
             }
         }
@@ -253,20 +253,3 @@ void promedio(ALUMNOS *L,int n)
 	printf("El promedio es: %.2f\n",prom);
 }
 
-void reporte(ALUMNOS *L,int n)
-{
-	
-	
-	FILE *fichero;
-
-	/* Abrimos "fichero1.txt" en modo texto y
-	 * guardamos su direccion en el puntero. */
-	fichero = fopen("fichero1.txt", "rt");
-
-	/* Imprimimos la direccion para este ejemplo. */
-	printf("%S\n",fichero);
-
-	/* Cerramos "fichero1.txt". */
-	fclose(fichero);
-	
-}
